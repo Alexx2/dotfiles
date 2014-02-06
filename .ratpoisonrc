@@ -1,0 +1,72 @@
+#Startup
+
+alias xsetroot -cursor_name left_ptr
+
+#unmanage
+
+unmanage feh
+unmanage thunar
+
+#colors and font
+
+set font "dejavu mono-12"
+
+set bwcolor #2e2227
+set fwcolor #9c8d92
+set bgcolor #fff3f9
+set fgcolor #827478
+
+#exec
+
+exec conky -c ~/.conkystatusbarrc
+#Workspaces
+exec rpws init 4 -k
+
+
+#----Key bindings.
+
+bind c exec urxvt
+bind d exec dmenu_run  -b -fn '-*-terminus-medium-r-*-*-22-*-*-*-*-*-*-*' -nb '#262626' -nf '#919191' -sb '#262626' -sf '#e1f04e'
+bind D tmpwm dwm
+bind y set padding 0 22 0 0
+bind Y set padding 0 0 0 0 
+bind q quit
+bind I frestore (frame :number 0 :x 0 :y 22 :width 720 :height 878 :screenw 1440 :screenh 900 :window 12582915 :last-access 52 :dedicated 0),(frame :number 1 :x 720 :y 22 :width 720 :height 439 :screenw 1440 :screenh 900 :window 18874375 :last-access 51 :dedicated 0),(frame :number 2 :x 720 :y 461 :width 360 :height 219 :screenw 1440 :screenh 900 :window 8388615 :last-access 50 :dedicated 0),(frame :number 4 :x 720 :y 680 :width 360 :height 220 :screenw 1440 :screenh 900 :window 35651591 :last-access 49 :dedicated 0),(frame :number 3 :x 1080 :y 461 :width 360 :height 439 :screenw 1440 :screenh 900 :window 33554439 :last-access 35 :dedicated 0),
+
+definekey top M-Left focusleft
+definekey top M-Up focusup
+definekey top M-Right focusright
+definekey top M-Down focusdown
+definekey top M-h focusleft
+definekey top M-k focusup
+definekey top M-l focusright
+definekey top M-j focusdown
+definekey top C-M-h exchangeleft
+definekey top C-M-j exchangedown
+definekey top C-M-k exchangeup
+definekey top C-M-l exchangeright
+definekey top M-n next
+definekey top M-p prev
+definekey top M-1 exec rpws 1
+definekey top M-2 exec rpws 2
+definekey top M-3 exec rpws 3
+definekey top M-w fselect
+definekey top M-S-Return exec urxvt
+definekey top M-d exec dmenu_run  -b -fn '-*-terminus-medium-r-*-*-22-*-*-*-*-*-*-*' -nb '#262626' -nf '#919191' -sb '#262626' -sf '#e1f04e'
+
+
+#----general settings.
+
+#reserve a space on the screen for conky. Turn on/off this space with 'y/Y' key, set above, under the bindings section.
+set padding 0 22 0 0 
+
+
+#Set the size of borders (window, bar etc)
+set border 1
+set barborder 1
+
+#Time, in seconds, of Ratpoion's bar permanence on screen
+msgwait 7
+
+#Set the windows naming style. Can be 'title', 'name' or 'class'.
+set winname title

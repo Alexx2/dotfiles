@@ -1,0 +1,115 @@
+ #A nice, elegant yet simple conky panel. With BIG letters.
+ 
+  total_run_times 0               
+  background yes                  
+
+
+  cpu_avg_samples 1               
+  net_avg_samples 2               
+
+
+  double_buffer yes               
+  no_buffers yes                  
+  text_buffer_size 256          
+
+
+  out_to_console no               
+  update_interval 1               
+
+#Choose the alignment. 
+  #alignment top_middle
+  alignment top_left          
+
+  #gap_x 100                    
+  gap_y -14                  
+
+  draw_shades no                  
+  draw_outline no                 
+  draw_borders no                
+  border_width 1                  
+  border_inner_margin 1           
+
+  own_window yes                  
+  own_window_type override        
+  own_window_transparent yes      
+  own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+
+  use_xft yes                    
+  xftalpha 1                     
+  override_utf8_locale yes       
+  uppercase no                   
+  use_spacer left                
+
+  xftfont saxMono:size=9         
+
+  default_bar_size 100 3         
+  stippled_borders 3             
+
+
+  default_color FFFFFF          
+  default_shade_color 333333    
+  default_outline_color 000000   
+
+#Colors to choose from
+  color  000000
+  color0 777777 #bg
+  color1 919191 #bg
+  color2 e13f55 #red                             
+  color3 c2621f #orange 
+  color4 937b00 #yellow                                 
+  color5 0c9100 #green
+  color6 1a8c77 #oceangreen
+  color7 587cbd #blue
+  color8 9f60d0 #indigo
+  color9 cb4ba2 #violet
+
+  short_units yes                
+  pad_percents 2                  
+
+
+default_bar_size 160 8
+
+TEXT
+
+${color #000000}
+  ${font Liberation Sans:size=82}${goto 595}${time %H:%M}${font}
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+                                                                                         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+
+     ${font Liberation Sans:size=42}${time %A
+ %d.%m}
+
+

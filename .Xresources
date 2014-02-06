@@ -1,0 +1,88 @@
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/uzbl-tabbed
+URxvt.matcher.button: 1
+Xft*dpi:                96
+Xft*antialias:          true
+urxvt*depth: 32
+*scrollBar: false
+*font: -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+!*boldfont: xft:Liberation Mono:pixelsize=13
+urxvt*transparent: true
+!urxvt*tintColor: #b_15
+urxvt*shading: 15
+
+!Color scheme by
+!
+!Alexandre Gavioli
+!http://github.com/Alexx2/levitycs
+!
+
+
+!Light theme
+
+#define b_1   #f7f7f7
+#define b_2   #e8e8e8
+#define b_3   #9e9e9e
+#define b_4   #919191
+#define b_5   #777777
+#define b_6   #6b6b6b
+#define b_7   #303030
+#define b_8   #262626
+
+!Dark theme
+
+!#define b_1  #262626
+!#define b_2  #303030
+!#define b_3  #6b6b6b
+!#define b_4  #777777
+!#define b_5  #919191
+!#define b_6  #9e9e9e
+!#define b_7  #e8e8e8
+!#define b_8  #f7f7f7
+
+
+!Colors
+
+!lred        
+#define lred #e13f55
+!lorange
+#define lorange #c2621f
+!lyellow
+#define lyellow #937b00
+!lgreen
+#define lgreen #0c9100
+!loceangreen
+#define loceangreen #1a8c77
+!lblue
+#define lblue #587cbd
+!lindigo
+#define lindigo #9f60d0
+!lviolet
+#define lviolet #cb4ba2
+
+
+*fading: 12
+*fadecolor: b_1
+*underlinecolor: b_6
+*highlightcolor: b_8
+*foreground: b_5
+*background: b_1
+*cursorcolor: b_6
+*pointercolorbackground: b_3
+*pointercolorforeground: b_6
+*color0:  b_2
+*color1:  lred
+*color2:  lorange
+*color3:  lyellow
+*color4:  lgreen
+*color5:  loceangreen
+*color6:  lblue
+*color7:  b_7
+*color8:  b_1
+*color9:  lindigo
+*color10: b_3
+*color11: b_4
+*color12: b_5
+*color13: lviolet
+*color14: b_6
+*color15: b_8

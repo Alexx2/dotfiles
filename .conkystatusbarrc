@@ -1,0 +1,24 @@
+#Conky script to be used as a Ratpoison status bar
+#call "conky -c path/to/conkyrc" on .xinitrc 
+#out_to_console yes
+out_to_x yes
+own_window_type override
+alignment top_right
+background no
+update_interval 1
+total_run_times 0
+use_spacer none
+gap_y 2.5
+gap_x 10
+double_buffer yes
+draw_outline no
+draw_shades no
+#font -*-termsyn.icons-medium-r-*-*-17-*-*-*-*-*-*-*
+use_xft yes
+#xftfont proggysquarett:size=16
+xftfont tamsynmod:size=14
+color0 c3c3c3 #to be used with dark backgrounds
+color1 232323 #with light backgrounds
+
+TEXT
+${if_mpd_playing}${color #e13f55}ê ${color1}${mpd_smart}${color #587cbd}  í ${color1}${mpd_vol}%${endif}${color #9f60d0}${if_existing /sys/class/power_supply/ACAD/online 1}    µ ${color1}${acpiacadapter ACAD}${endif}${if_existing /sys/class/power_supply/ACAD/online 0}${color #cb4ba2}    ð ${color1}${battery_percent BAT1}% (${battery_time BAT1})${endif}${color #937b00}    ¤ ${color1}${wireless_link_qual_perc wlp6s0}%${color #1a8c77}    ¨ ${color1}${fs_free}${color #0c9100}    Ñ ${color1}${cpu cpu0}%${color #cb4ba2}${color #587cbd}    × ${color1}${memperc}% (${mem})${color #c2621f}    É ${color1}${time %a %b %d %I:%M%P}

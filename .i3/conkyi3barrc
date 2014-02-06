@@ -1,0 +1,24 @@
+#Conky script to be used as i3 status bar
+#call "conky -c path/to/conkyrc" on .xinitrc 
+out_to_console yes
+out_to_x no 
+background no
+update_interval 2
+total_run_times 0
+use_spacer none
+short_units yes
+
+TEXT
+
+[
+ 
+ { "full_text" : "${if_mpd_playing}${mpd_smart}${endif}", "color" : "\#292929", "separator" : false },
+ { "full_text" : "WLAN ${wireless_link_qual_perc wlp6s0}%", "color" : "\#000000" },
+ { "full_text" : "FREE ${fs_free /}", "color" : "\#000000" },
+ { "full_text" : "CPU ${cpu cpu0}%", "color" :"\#000000" },
+ { "full_text" : "RAM ${memperc}%", "color" : "\#000000" },
+ { "full_text" : "SWAP ${swap}", "color" : "\#000000" },
+ { "full_text" : "BAT ${battery_percent BAT1}%", "color" : "\#000000" }, 
+ { "full_text" : "${time %a %b %d %I:%M%P}", "color" : "\#000000" }
+
+],
