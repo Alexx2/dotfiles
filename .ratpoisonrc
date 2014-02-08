@@ -33,10 +33,6 @@ bind Y set padding 0 0 0 0
 bind q quit
 bind I frestore (frame :number 0 :x 0 :y 22 :width 720 :height 878 :screenw 1440 :screenh 900 :window 12582915 :last-access 52 :dedicated 0),(frame :number 1 :x 720 :y 22 :width 720 :height 439 :screenw 1440 :screenh 900 :window 18874375 :last-access 51 :dedicated 0),(frame :number 2 :x 720 :y 461 :width 360 :height 219 :screenw 1440 :screenh 900 :window 8388615 :last-access 50 :dedicated 0),(frame :number 4 :x 720 :y 680 :width 360 :height 220 :screenw 1440 :screenh 900 :window 35651591 :last-access 49 :dedicated 0),(frame :number 3 :x 1080 :y 461 :width 360 :height 439 :screenw 1440 :screenh 900 :window 33554439 :last-access 35 :dedicated 0),
 
-definekey top M-Left focusleft
-definekey top M-Up focusup
-definekey top M-Right focusright
-definekey top M-Down focusdown
 definekey top M-h focusleft
 definekey top M-k focusup
 definekey top M-l focusright
@@ -53,7 +49,7 @@ definekey top M-3 exec rpws 3
 definekey top M-w fselect
 definekey top M-S-Return exec urxvt
 definekey top M-d exec dmenu_run  -b -fn '-*-terminus-medium-r-*-*-22-*-*-*-*-*-*-*' -nb '#262626' -nf '#919191' -sb '#262626' -sf '#e1f04e'
-
+definekey top M-m focus
 
 #----general settings.
 

@@ -20,5 +20,6 @@ xftfont tamsynmod:size=14
 color0 c3c3c3 #to be used with dark backgrounds
 color1 232323 #with light backgrounds
 
+
 TEXT
-${if_mpd_playing}${color #e13f55}ê ${color1}${mpd_smart}${color #587cbd}  í ${color1}${mpd_vol}%${endif}${color #9f60d0}${if_existing /sys/class/power_supply/ACAD/online 1}    µ ${color1}${acpiacadapter ACAD}${endif}${if_existing /sys/class/power_supply/ACAD/online 0}${color #cb4ba2}    ð ${color1}${battery_percent BAT1}% (${battery_time BAT1})${endif}${color #937b00}    ¤ ${color1}${wireless_link_qual_perc wlp6s0}%${color #1a8c77}    ¨ ${color1}${fs_free}${color #0c9100}    Ñ ${color1}${cpu cpu0}%${color #cb4ba2}${color #587cbd}    × ${color1}${memperc}% (${mem})${color #c2621f}    É ${color1}${time %a %b %d %I:%M%P}
+${if_mpd_playing}${color #e13f55}ê ${color1}${mpd_smart}${color #587cbd}  í ${color1}${mpd_vol}%${endif}${color #9f60d0}${if_existing /sys/class/power_supply/ACAD/online 1}   µ ${color1}${acpiacadapter ACAD}${endif}${if_existing /sys/class/power_supply/ACAD/online 0}${color #cb4ba2}   ð ${color1}${battery_percent BAT1}% (${battery_time BAT1})${endif}${color #937b00}   ¤ ${color1}${wireless_link_qual_perc wlp6s0}%${color #1a8c77}   ¨ ${color1}${fs_free}${color #0c9100}   Ñ ${color1}${cpu cpu0}%${color #cb4ba2}${color #587cbd}   × ${color1}${memperc}% (${mem})${color #c2621f}   É ${color1}${time %a %b %d %I:%M%P}

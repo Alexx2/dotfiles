@@ -36,7 +36,7 @@ print_power() {
   status="$(cat /sys/class/power_supply/ACAD/online)"
   battery="$(cat /sys/class/power_supply/BAT1/capacity)"
   if [ "${status}" == 1 ]; then
-    echo -ne "${color5}µ${color12}on"
+    echo -ne "${color5}Â${color12}on"
   else
     echo -ne "${color4}ð${color12}${battery}%"
   fi
@@ -57,19 +57,26 @@ print_hddfree() {
   echo -ne "${color8}¨${color12}${hddfree}"
 }
 
+
+print_swap_used() {
+  swapused="$(free -h | awk 'FNR == 4 {print $3}')"
+  echo -ne "${color9}Ð${color12}${swapused}"
+}
+
+
 print_mem_used() {
-  mem_used="$(free -m | awk 'NR==3 {print $3}')"
-  echo -ne "${color9}×${color12}${mem_used}M"
+  mem_used="$(free -h | awk 'FNR == 3 {print $3}')"
+  echo -ne "${color10}×${color12}${mem_used}"
 }
 
 print_volume() {
   volume="$(amixer get PCM | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
-  echo -ne "${color11}í${color12}${volume}%"
+  echo -ne "${color4}í${color12}${volume}%"
 }
 
 print_datetime() {
   datetime="$(date "+%a %d %b %H:%M")"
-  echo -ne "${color4}É${color12}${datetime}"
+  echo -ne "${color5}É${color12}${datetime}"
 }
 
 # cpu (from: https://bbs.archlinux.org/viewtopic.php?pid=661641#p661641)
@@ -83,12 +90,12 @@ while true; do
 
   # output vars
 print_cpu_used() {
-  printf "%-1b" "${color10}Ñ${color12}${cpu_used}%"
+  printf "%-1b" "${color11}Ñ${color12}${cpu_used}%"
 #"%-10b" "${color7}CPU:${cpu_used}%"
 }
  
   # Pipe to status bar, not indented due to printing extra spaces/tabs
-  xsetroot -name "$(print_power)${sp}$(print_uptime)${sp}$(print_wifiqual)${sp}$(print_hddfree)${sp}$(print_mem_used)${sp}$(print_cpu_used)${sp}$(print_volume)${sp}$(print_datetime)"
+  xsetroot -name "$(print_power)${sp}$(print_uptime)${sp}$(print_wifiqual)${sp}$(print_hddfree)${sp}$(print_swap_used)${sp}$(print_mem_used)${sp}$(print_cpu_used)${sp}$(print_volume)${sp}$(print_datetime)"
 
   # reset old rates
   cpu_idle_old=$cpu_idle_now
