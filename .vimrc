@@ -21,7 +21,7 @@ endif
 
 
 " display settings
-set background=light     " enable for dark terminals
+set background=dark     " enable for dark terminals
 set nowrap              " don't wrap lines
 set scrolloff=2         " 2 lines above/below cursor when scrolling
 set number              " show line numbers
@@ -113,27 +113,27 @@ map <F4> :emenu <C-Z>
 
 
 " theme settings for GUI
-if has("gui_running")
-  colorscheme koehler
-  highlight Normal guibg=black guifg=grey90
-  "set mousemodel=popup_setpos
+"if has("gui_running")
+"  colorscheme koehler
+"  highlight Normal guibg=black guifg=grey90
+"  "set mousemodel=popup_setpos
 
-  " kvim/gvim use different notations for fonts.
-  if has("gui_kde") 
-    set guioptions=agimLtT  " this appears to fix the window resizing in kvim (hides scrollbar)
-    set guifont=Fixed\ [Misc]/10/-1/5/50/0/0/0/1/0 
-  else
-    if has("gui_gtk") 
-      set guifont=-misc-fixed-medium-r-normal-*-*-100-*-*-c-*-iso10646-1 
-      " for terminal: dec-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1 
-    else
-      if has("win32")
-        set guifont=Fixedsys:h9:cANSI
-      endif
-    endif   
-  endif 
+"  " kvim/gvim use different notations for fonts.
+"  if has("gui_kde") 
+"    set guioptions=agimLtT  " this appears to fix the window resizing in kvim (hides scrollbar)
+"    set guifont=Fixed\ [Misc]/10/-1/5/50/0/0/0/1/0 
+"  else
+"    if has("gui_gtk") 
+"      set guifont=-misc-fixed-medium-r-normal-*-*-100-*-*-c-*-iso10646-1 
+"      " for terminal: dec-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1 
+"    else
+"      if has("win32")
+"        set guifont=Fixedsys:h9:cANSI
+"      endif
+"    endif   
+"  endif 
 
-endif
+"endif
 
 
 " color settings (if terminal/gui supports it)
@@ -247,8 +247,8 @@ endif " has("autocmd")
 " (SUSE's default vimrc still uses "modelines=0")
 set nomodeline   " disable the magic "vim: .." lines in files
 
-"Levity CS options
 syntax enable
-colorscheme levity
+colorscheme solarized
+
 
 " end of file

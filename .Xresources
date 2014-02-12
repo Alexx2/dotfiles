@@ -25,39 +25,38 @@ urxvt*depth: 32
 
 ! Common
 
-#define S_yellow        #a88f16
-#define S_orange        #d17b42
-#define S_red           #e1535d
-#define S_magenta       #c251ba
-#define S_violet        #8d68c6
-#define S_gray          #848484 
-#define S_green         #64a027
-#define S_cyan          #49a07f
-#define S_blue          #5b7ab0
-
+#define S_yellow        #a89000
+#define S_orange        #c66d20
+#define S_red           #db3333
+#define S_magenta       #d95298
+#define S_violet        #915ecd
+#define S_gray          #828282
+#define S_green         #14a51d
+#define S_cyan          #329191
+#define S_blue          #5d73c0
 
 ! Dark Blue
 
-!#define S_base03        #202439
-!#define S_base02        #2b2f44
-!#define S_base01        #656981
-!#define S_base00        #72768f
-!#define S_base0         #8c8fa9
-!#define S_base1         #999db7
-!#define S_base2         #e3e7ff
-!#define S_base3         #f2f5ff
+#define S_base03        #202439
+#define S_base02        #2b2f44
+#define S_base01        #656981
+#define S_base00        #72768f
+#define S_base0         #8c8fa9
+#define S_base1         #999db7
+#define S_base2         #e3e7ff
+#define S_base3         #f2f5ff
 
 
 ! Light Blue
 
- #define S_base03        #f2f5ff
- #define S_base02        #e3e7ff
- #define S_base01        #999db7
- #define S_base00        #8c8fa9
- #define S_base0         #72768f
- #define S_base1         #656981
- #define S_base2         #2b2f44
- #define S_base3         #202439
+#define S_base03        #f2f5ff
+#define S_base02        #e3e7ff
+#define S_base01        #999db7
+#define S_base00        #8c8fa9
+#define S_base0         #72768f
+#define S_base1         #656981
+#define S_base2         #2b2f44
+#define S_base3         #202439
 
 
 *background:              S_base03
@@ -72,7 +71,7 @@ urxvt*depth: 32
 *color1:                  S_red
 *color2:                  S_green
 *color3:                  S_yellow
-*color4:                  S_gray
+*color4:                  S_blue
 *color5:                  S_magenta
 *color6:                  S_cyan
 *color7:                  S_base2
