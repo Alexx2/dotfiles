@@ -23,8 +23,11 @@ exec conky -c ~/.conkystatusbarrc
 exec rpws init 4 -k
 
 
-#----Key bindings.
+#----Key bindings & unbindings
 
+unbind Return
+
+bind Return only
 bind c exec urxvt
 bind d exec dmenu_run  -b -fn '-*-terminus-medium-r-*-*-22-*-*-*-*-*-*-*' -nb '#262626' -nf '#919191' -sb '#262626' -sf '#e1f04e'
 bind D tmpwm dwm

@@ -1,3 +1,23 @@
+! Base16 Levity Gray
+! Scheme: Alexandre Gavioli (https://github.com/Alexx2)
+
+#define base00 #272727
+#define base01 #313131
+#define base02 #6b6b6b
+#define base03 #777777
+#define base04 #919191
+#define base05 #9e9e9e
+#define base06 #e8e8e8
+#define base07 #f7f7f7
+#define base08 #db3333
+#define base09 #c66d20
+#define base0A #b79104
+#define base0B #14a51d
+#define base0C #47a4a3
+#define base0D #798ddc
+#define base0E #d95298
+#define base0F #9f6bdb
+
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/uzbl-tabbed
 URxvt.matcher.button: 1
@@ -22,65 +42,38 @@ urxvt*depth: 32
 !urxvt*tintColor: #b_15
 !urxvt*shading: 15
 
+*.fading:					15
+*.foreground:   base02
+*.background:   base07
+*.cursorColor:  base02
+*.color0:       base01
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0F
+*.color6:       base0C
+*.color7:       base06
+*.color8:       base00
+*.color9:       base09
+*.color10:      base02
 
-! Common
-
-#define S_yellow        #a89000
-#define S_orange        #c66d20
-#define S_red           #db3333
-#define S_magenta       #d95298
-#define S_violet        #915ecd
-#define S_gray          #828282
-#define S_green         #14a51d
-#define S_cyan          #329191
-#define S_blue          #5d73c0
-
-! Dark Blue
-
-#define S_base03        #202439
-#define S_base02        #2b2f44
-#define S_base01        #656981
-#define S_base00        #72768f
-#define S_base0         #8c8fa9
-#define S_base1         #999db7
-#define S_base2         #e3e7ff
-#define S_base3         #f2f5ff
-
-
-! Light Blue
-
-#define S_base03        #f2f5ff
-#define S_base02        #e3e7ff
-#define S_base01        #999db7
-#define S_base00        #8c8fa9
-#define S_base0         #72768f
-#define S_base1         #656981
-#define S_base2         #2b2f44
-#define S_base3         #202439
-
-
-*background:              S_base03
-*foreground:              S_base0
-*fading:                  15
-*fadeColor:               S_base03
-*cursorColor:             S_base1
-*pointerColorBackground:  S_base01
-*pointerColorForeground:  S_base1
-
-*color0:                  S_base02
-*color1:                  S_red
-*color2:                  S_green
-*color3:                  S_yellow
-*color4:                  S_blue
-*color5:                  S_magenta
-*color6:                  S_cyan
-*color7:                  S_base2
-*color9:                  S_orange
-*color8:                  S_base03
-*color10:                 S_base01
-*color11:                 S_base00
-*color12:                 S_base0
-*color13:                 S_violet
-*color14:                 S_base1
-*color15:                 S_base3
-
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+*.color8:       base03
+*.color9:       base09
+*.color10:      base01
+*.color11:      base02
+*.color12:      base04
+*.color13:      base06
+*.color14:      base0F
+*.color15:      base07

@@ -10,3 +10,5 @@ zstyle :compinstall filename '/home/alexandre/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+zsh $HOME/temas/base16/output/shell/base16-levitygray.dark.sh

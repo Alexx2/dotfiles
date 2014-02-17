@@ -37,7 +37,6 @@ case $session in
 		ratpoison) exec ratpoison;;
 		# No known session, try to run it as command
 		*) exec $1;;
-
 esac
 
 #Secoes - configuracao manual
