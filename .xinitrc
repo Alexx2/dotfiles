@@ -31,7 +31,7 @@ sh ~/.fehbg &
 session=${1:-ratpoison}
 
 case $session in
-		dwm) $HOME/.dwm_bar.sh & exec dwm;;
+		dwm) dwmbar & exec dwm;;
 		openbox) exec openbox-session;;
 		i3) exec i3;;
 		ratpoison) exec ratpoison;;

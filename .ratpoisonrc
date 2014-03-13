@@ -5,7 +5,6 @@ alias xsetroot -cursor_name left_ptr
 #unmanage
 
 unmanage feh
-unmanage thunar
 
 #colors and font
 

@@ -11,4 +11,4 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-zsh $HOME/temas/base16/output/shell/base16-levitygray.dark.sh
+zsh $HOME/temas/base16-builder/output/shell/base16-brown.dark.sh
